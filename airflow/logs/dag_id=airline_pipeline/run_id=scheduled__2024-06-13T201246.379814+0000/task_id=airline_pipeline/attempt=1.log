@@ -1,0 +1,20 @@
+[2024-06-13T20:15:49.524+0000] {logging_mixin.py:149} INFO - Changing /usr/local/airflow/logs/dag_id=airline_pipeline/run_id=scheduled__2024-06-13T20:12:46.379814+00:00/task_id=airline_pipeline permission to 509
+[2024-06-13T20:15:49.525+0000] {logging_mixin.py:149} INFO - Failed to change /usr/local/airflow/logs/dag_id=airline_pipeline/run_id=scheduled__2024-06-13T20:12:46.379814+00:00/task_id=airline_pipeline permission to 509: [Errno 1] Operation not permitted: '/usr/local/airflow/logs/dag_id=airline_pipeline/run_id=scheduled__2024-06-13T20:12:46.379814+00:00/task_id=airline_pipeline'
+[2024-06-13T20:15:49.570+0000] {logging_mixin.py:149} INFO - Changing /usr/local/airflow/logs/dag_id=airline_pipeline/run_id=scheduled__2024-06-13T20:12:46.379814+00:00/task_id=airline_pipeline permission to 509
+[2024-06-13T20:15:49.571+0000] {logging_mixin.py:149} INFO - Failed to change /usr/local/airflow/logs/dag_id=airline_pipeline/run_id=scheduled__2024-06-13T20:12:46.379814+00:00/task_id=airline_pipeline permission to 509: [Errno 1] Operation not permitted: '/usr/local/airflow/logs/dag_id=airline_pipeline/run_id=scheduled__2024-06-13T20:12:46.379814+00:00/task_id=airline_pipeline'
+[2024-06-13T20:15:49.768+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: airline_pipeline.airline_pipeline scheduled__2024-06-13T20:12:46.379814+00:00 [queued]>
+[2024-06-13T20:15:49.783+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: airline_pipeline.airline_pipeline scheduled__2024-06-13T20:12:46.379814+00:00 [queued]>
+[2024-06-13T20:15:49.784+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2024-06-13T20:15:49.805+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): airline_pipeline> on 2024-06-13 20:12:46.379814+00:00
+[2024-06-13T20:15:49.811+0000] {standard_task_runner.py:57} INFO - Started process 244 to run task
+[2024-06-13T20:15:49.816+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'airline_pipeline', 'airline_pipeline', 'scheduled__2024-06-13T20:12:46.379814+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/fligoo_airline.py', '--cfg-path', '/tmp/tmpplz87afj']
+[2024-06-13T20:15:49.818+0000] {standard_task_runner.py:85} INFO - Job 3: Subtask airline_pipeline
+[2024-06-13T20:15:49.885+0000] {logging_mixin.py:149} INFO - Changing /usr/local/airflow/logs/dag_id=airline_pipeline/run_id=scheduled__2024-06-13T20:12:46.379814+00:00/task_id=airline_pipeline permission to 509
+[2024-06-13T20:15:49.885+0000] {logging_mixin.py:149} INFO - Failed to change /usr/local/airflow/logs/dag_id=airline_pipeline/run_id=scheduled__2024-06-13T20:12:46.379814+00:00/task_id=airline_pipeline permission to 509: [Errno 1] Operation not permitted: '/usr/local/airflow/logs/dag_id=airline_pipeline/run_id=scheduled__2024-06-13T20:12:46.379814+00:00/task_id=airline_pipeline'
+[2024-06-13T20:15:49.887+0000] {task_command.py:410} INFO - Running <TaskInstance: airline_pipeline.airline_pipeline scheduled__2024-06-13T20:12:46.379814+00:00 [running]> on host d790347dab16
+[2024-06-13T20:15:49.998+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='solorzano.vco@gmail.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='airline_pipeline' AIRFLOW_CTX_TASK_ID='airline_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2024-06-13T20:12:46.379814+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-13T20:12:46.379814+00:00'
+[2024-06-13T20:15:51.835+0000] {logging_mixin.py:149} INFO - Respuesta obtenida con éxito
+[2024-06-13T20:15:51.907+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-06-13T20:15:51.922+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=airline_pipeline, task_id=airline_pipeline, execution_date=20240613T201246, start_date=20240613T201549, end_date=20240613T201551
+[2024-06-13T20:15:51.961+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2024-06-13T20:15:51.987+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
