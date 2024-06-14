@@ -1,0 +1,24 @@
+[2024-06-13T19:59:15.504+0000] {logging_mixin.py:149} INFO - Changing /usr/local/airflow/logs/dag_id=airline_pipeline/run_id=scheduled__2024-06-13T19:56:03.878101+00:00/task_id=airline_pipeline permission to 509
+[2024-06-13T19:59:15.506+0000] {logging_mixin.py:149} INFO - Failed to change /usr/local/airflow/logs/dag_id=airline_pipeline/run_id=scheduled__2024-06-13T19:56:03.878101+00:00/task_id=airline_pipeline permission to 509: [Errno 1] Operation not permitted: '/usr/local/airflow/logs/dag_id=airline_pipeline/run_id=scheduled__2024-06-13T19:56:03.878101+00:00/task_id=airline_pipeline'
+[2024-06-13T19:59:15.554+0000] {logging_mixin.py:149} INFO - Changing /usr/local/airflow/logs/dag_id=airline_pipeline/run_id=scheduled__2024-06-13T19:56:03.878101+00:00/task_id=airline_pipeline permission to 509
+[2024-06-13T19:59:15.557+0000] {logging_mixin.py:149} INFO - Failed to change /usr/local/airflow/logs/dag_id=airline_pipeline/run_id=scheduled__2024-06-13T19:56:03.878101+00:00/task_id=airline_pipeline permission to 509: [Errno 1] Operation not permitted: '/usr/local/airflow/logs/dag_id=airline_pipeline/run_id=scheduled__2024-06-13T19:56:03.878101+00:00/task_id=airline_pipeline'
+[2024-06-13T19:59:15.709+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: airline_pipeline.airline_pipeline scheduled__2024-06-13T19:56:03.878101+00:00 [queued]>
+[2024-06-13T19:59:15.720+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: airline_pipeline.airline_pipeline scheduled__2024-06-13T19:56:03.878101+00:00 [queued]>
+[2024-06-13T19:59:15.721+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2024-06-13T19:59:15.740+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): airline_pipeline> on 2024-06-13 19:56:03.878101+00:00
+[2024-06-13T19:59:15.746+0000] {standard_task_runner.py:57} INFO - Started process 226 to run task
+[2024-06-13T19:59:15.750+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'airline_pipeline', 'airline_pipeline', 'scheduled__2024-06-13T19:56:03.878101+00:00', '--job-id', '74', '--raw', '--subdir', 'DAGS_FOLDER/fligoo_airline.py', '--cfg-path', '/tmp/tmp7s4tg93c']
+[2024-06-13T19:59:15.753+0000] {standard_task_runner.py:85} INFO - Job 74: Subtask airline_pipeline
+[2024-06-13T19:59:15.821+0000] {logging_mixin.py:149} INFO - Changing /usr/local/airflow/logs/dag_id=airline_pipeline/run_id=scheduled__2024-06-13T19:56:03.878101+00:00/task_id=airline_pipeline permission to 509
+[2024-06-13T19:59:15.822+0000] {logging_mixin.py:149} INFO - Failed to change /usr/local/airflow/logs/dag_id=airline_pipeline/run_id=scheduled__2024-06-13T19:56:03.878101+00:00/task_id=airline_pipeline permission to 509: [Errno 1] Operation not permitted: '/usr/local/airflow/logs/dag_id=airline_pipeline/run_id=scheduled__2024-06-13T19:56:03.878101+00:00/task_id=airline_pipeline'
+[2024-06-13T19:59:15.824+0000] {task_command.py:410} INFO - Running <TaskInstance: airline_pipeline.airline_pipeline scheduled__2024-06-13T19:56:03.878101+00:00 [running]> on host 6eca4ceb3669
+[2024-06-13T19:59:15.958+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='solorzano.vco@gmail.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='airline_pipeline' AIRFLOW_CTX_TASK_ID='airline_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2024-06-13T19:56:03.878101+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-13T19:56:03.878101+00:00'
+[2024-06-13T19:59:17.684+0000] {logging_mixin.py:149} INFO - Respuesta obtenida con éxito
+[2024-06-13T19:59:17.733+0000] {logging_mixin.py:149} INFO - Error conectando a la base de datos: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2024-06-13T19:59:17.734+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-06-13T19:59:17.748+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=airline_pipeline, task_id=airline_pipeline, execution_date=20240613T195603, start_date=20240613T195915, end_date=20240613T195917
+[2024-06-13T19:59:17.814+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2024-06-13T19:59:17.838+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
